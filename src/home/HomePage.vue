@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'vuex';
+import { mapState } from 'vuex';
 import Layout from '../layouts/Layout';
 
 export default {
@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     ...mapState({
-      account: state => state.account,
+      account: (state) => state.account,
       // users: state => state.users.all
     }),
   },

@@ -15,7 +15,7 @@ export function configureFakeBackend() {
           let params = JSON.parse(opts.body);
 
           // find if any user matches login credentials
-          let filteredUsers = users.filter(user => {
+          let filteredUsers = users.filter((user) => {
             return user.email === params.email && user.password === params.password;
           });
 
@@ -63,7 +63,7 @@ export function configureFakeBackend() {
             // find user by id in users array
             let urlParts = url.split('/');
             let id = parseInt(urlParts[urlParts.length - 1]);
-            let matchedUsers = users.filter(user => {
+            let matchedUsers = users.filter((user) => {
               return user.id === id;
             });
             let user = matchedUsers.length ? matchedUsers[0] : null;
@@ -84,7 +84,7 @@ export function configureFakeBackend() {
           let newUser = JSON.parse(opts.body);
 
           // validation
-          let duplicateUser = users.filter(user => {
+          let duplicateUser = users.filter((user) => {
             return user.email === newUser.email;
           }).length;
           if (duplicateUser) {
@@ -93,7 +93,7 @@ export function configureFakeBackend() {
           }
 
           // save new user
-          newUser.id = users.length ? Math.max(...users.map(user => user.id)) + 1 : 1;
+          newUser.id = users.length ? Math.max(...users.map((user) => user.id)) + 1 : 1;
           users.push(newUser);
           localStorage.setItem('users', JSON.stringify(users));
 
@@ -131,7 +131,7 @@ export function configureFakeBackend() {
         }
 
         // pass through any requests not handled above
-        realFetch(url, opts).then(response => resolve(response));
+        realFetch(url, opts).then((response) => resolve(response));
       }, 500);
     });
   };

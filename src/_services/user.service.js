@@ -23,7 +23,7 @@ function login(email, password) {
 
   return fetch(`${API_URL}${API_POST_LOGIN_PATH}`, requestOptions)
     .then(handleResponse)
-    .then(userToken => {
+    .then((userToken) => {
       // login successful if there's a jwt token in the response
       if (userToken.access_token) {
         // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -96,7 +96,7 @@ function _delete(id) {
 }
 
 function handleResponse(response) {
-  return response.text().then(text => {
+  return response.text().then((text) => {
     const data = text && JSON.parse(text);
     if (!response.ok) {
       if (response.status === 401) {
@@ -114,7 +114,7 @@ function handleResponse(response) {
 }
 
 function handleAuthUserResponse(response) {
-  return response.text().then(text => {
+  return response.text().then((text) => {
     const data = text && JSON.parse(text);
     const user = JSON.parse(localStorage.getItem('user'));
     _.assign(user, data);

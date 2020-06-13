@@ -37,7 +37,7 @@ import { mapState, mapActions } from 'vuex';
 import Layout from '../layouts/Layout';
 
 export default {
-  name: `Login`,
+  name: 'Login',
   components: {
     Layout,
   },
@@ -46,7 +46,6 @@ export default {
       email: '',
       password: '',
       submitted: false,
-      remember_me: true,
     };
   },
   computed: {
@@ -58,7 +57,7 @@ export default {
   },
   methods: {
     ...mapActions('account', ['login', 'logout']),
-    handleSubmit(e) {
+    handleSubmit() {
       this.submitted = true;
       const { email, password } = this;
       if (email && password) {

@@ -24,7 +24,7 @@ export default {
   name: `LayoutMain`,
   computed: {
     ...mapState({
-      account: state => state.account,
+      account: (state) => state.account,
     }),
   },
   created() {

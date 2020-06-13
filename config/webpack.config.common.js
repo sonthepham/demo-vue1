@@ -45,7 +45,6 @@ const webpackConfig = {
     ],
   },
   plugins: [new VueLoaderPlugin(), new HtmlPlugin({ template: 'src/index.html', chunksSortMode: 'dependency' })],
-  
 };
 
 module.exports = webpackConfig;

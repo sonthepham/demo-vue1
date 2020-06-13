@@ -67,7 +67,7 @@ export default {
     ...mapActions('account', ['register']),
     handleSubmit(e) {
       this.submitted = true;
-      this.$validator.validate().then(valid => {
+      this.$validator.validate().then((valid) => {
         if (valid) {
           this.user.password_confirmation = this.user.password;
           this.register(this.user);

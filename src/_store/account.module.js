@@ -9,22 +9,22 @@ const actions = {
     commit('loginRequest', { email, password });
 
     userService.login(email, password).then(
-      user => {
+      (user) => {
         commit('loginSuccess', user);
         router.push('/');
       },
-      error => {
+      (error) => {
         commit('loginFailure', error);
         dispatch('alert/error', error, { root: true });
       },
     );
   },
-  loadUserLogin({ dispatch, commit }) {
+  loadUserLogin({ commit }) {
     userService.getUserLogin().then(
-      user => {
+      (user) => {
         commit('loadUserLoginSuccess', user);
       },
-      error => {
+      (error) => {
         commit('loadUserLoginFailure', error);
         commit('logout');
       },
@@ -38,7 +38,7 @@ const actions = {
     commit('registerRequest', user);
 
     userService.register(user).then(
-      user => {
+      (user) => {
         commit('registerSuccess', user);
         router.push('/login');
         setTimeout(() => {
@@ -48,7 +48,7 @@ const actions = {
           });
         });
       },
-      error => {
+      (error) => {
         commit('registerFailure', error);
         dispatch('alert/error', error, { root: true });
       },
@@ -81,13 +81,13 @@ const mutations = {
     state.status = {};
     state.user = null;
   },
-  registerRequest(state, user) {
+  registerRequest(state) {
     state.status = { registering: true };
   },
-  registerSuccess(state, user) {
+  registerSuccess(state) {
     state.status = {};
   },
-  registerFailure(state, error) {
+  registerFailure(state) {
     state.status = {};
   },
 };

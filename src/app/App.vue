@@ -13,7 +13,7 @@
 import { mapState, mapActions } from 'vuex';
 
 export default {
-  name: 'App',
+  name: `App`,
   data() {
     return {
       layout: `div`,
@@ -21,13 +21,7 @@ export default {
   },
   computed: {
     ...mapState({
-      alert: state => state.alert,
-    }),
-  },
-
-  methods: {
-    ...mapActions({
-      clearAlert: 'alert/clear',
+      alert: (state) => state.alert,
     }),
   },
   watch: {
@@ -35,6 +29,11 @@ export default {
       // clear alert on location change
       this.clearAlert();
     },
+  },
+  methods: {
+    ...mapActions({
+      clearAlert: 'alert/clear',
+    }),
   },
 };
 </script>
