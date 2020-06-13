@@ -1,4 +1,4 @@
-import { API_POST_SIGNUP_PATH, API_POST_LOGIN_PATH, API_GET_USER_PATH } from '../_helpers';
+import { API_POST_SIGN_UP_PATH, API_POST_LOGIN_PATH, API_GET_USER_PATH } from '../_helpers';
 
 // array in local storage for registered users
 let users = JSON.parse(localStorage.getItem('users')) || [];
@@ -79,7 +79,7 @@ export function configureFakeBackend() {
         }
 
         // register user
-        if (url.endsWith(API_POST_SIGNUP_PATH) && opts.method === 'POST') {
+        if (url.endsWith(API_POST_SIGN_UP_PATH) && opts.method === 'POST') {
           // get new user object from post body
           let newUser = JSON.parse(opts.body);
 
