@@ -45,12 +45,7 @@ const webpackConfig = {
     ],
   },
   plugins: [new VueLoaderPlugin(), new HtmlPlugin({ template: 'src/index.html', chunksSortMode: 'dependency' })],
-  // externals: {
-  //   // global app config object
-  //   config: JSON.stringify({
-  //     apiUrl: 'http://localhost:8000',
-  //   }),
-  // },
+  
 };
 
 module.exports = webpackConfig;
