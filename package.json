@@ -10,7 +10,7 @@
     "staging": "cross-env NODE_ENV=staging webpack",
     "build": "cross-env NODE_ENV=production webpack",
     "linting": "eslint src",
-    "prettier": "prettier \"src/**/*.{js,css}\"",
+    "prettier": "prettier \"src/**/*.{js,vue,css}\"",
     "format": "npm run prettier -- --write"
   },
   "dependencies": {
