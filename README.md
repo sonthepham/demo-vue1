@@ -3,6 +3,9 @@
 ## Table of Contents
 
 - [Installation](#installation)
+- [CheckCode](#Check code)
+- [FormatCode](#Format code)
+- [Testing](#testing)
 
 ### Installation
 
@@ -16,21 +19,33 @@ $ cd auth-web-demo
 ~/auth-web-demo$ npm install
 ```
 
-3. Configure api url, edit file webpack.config.js
+3. Serve with hot reload at localhost:8000 
 ```
-config: JSON.stringify({
-    apiUrl: 'http://localhost:8000'
-})
+~/auth-web-demo$ npm run dev
 ```
 
-4. Serve with hot reload.
-```
-~/auth-web-demo$ npm run start
-```
-
-5. Build for production with minification.
+4. Build for production with minification.
 ```
 ~/auth-web-demo$ npm run build
+```
+
+### CheckCode
+
+```
+~/auth-web-demo$ npm run linting
+```
+
+### FormatCode
+
+```
+~/auth-web-demo$ npm run format
+```
+
+### Testing
+
+1. Unit Testing
+```
+~/auth-web-demo$ npm run test
 ```
 
 ## About
