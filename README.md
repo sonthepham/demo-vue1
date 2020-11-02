@@ -13,14 +13,14 @@
 | `destroy()`   | **Destroy your computer!**     |
 
 ### I.Thông tin bất động sản
-|code |description |
-|:---: |:---: |:---: |
-|THDC1 |Địa chỉ |
-|THTT2 |Tỉnh/Thành |
-|THQ3 |Quận |
-|THP4 |Phường |
-|THD5 |Đường |
-|THDD41 |Đoạn đường |
+|code   |description                      |
+|:---:  |:---: |:---:                     |
+|THDC1  |Địa chỉ                          |
+|THTT2  |Tỉnh/Thành                       |
+|THQ3   |Quận                             | 
+|THP4   |Phường                           |
+|THD5   |Đường                            |
+|THDD41 |Đoạn đường                       |
 
 
 ### II. Quyền sử dụng đất
