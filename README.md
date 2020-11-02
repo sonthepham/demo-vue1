@@ -12,6 +12,12 @@
 | `help()`      | Display the help window.       |
 | `destroy()`   | **Destroy your computer!**     |
 
+
+### I.Thông tin bất động sản
+| Code | Description                    |
+| ------------- | ------------------------------ |
+| THDC1      | Địa chỉ      |
+| THTT2   | Tỉnh/Thành     |
    
 
 |code   |description                      |
