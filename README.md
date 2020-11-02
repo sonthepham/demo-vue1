@@ -12,7 +12,8 @@
 | `help()`      | Display the help window.       |
 | `destroy()`   | **Destroy your computer!**     |
 
-### I.Thông tin bất động sản
+   
+
 |code   |description                      |
 |:---:  |:---: |:---:                     |
 |THDC1  |Địa chỉ                          |
