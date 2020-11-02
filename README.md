@@ -12,12 +12,22 @@
 | `help()`      | Display the help window.       |
 | `destroy()`   | **Destroy your computer!**     |
 
-
 ### I.Thông tin bất động sản
 | Code | Description                    |
 | ------------- | ------------------------------ |
-| THDC1      | Địa chỉ      |
-| THTT2   | Tỉnh/Thành     |
+| THDC1 | Địa chỉ |
+| THTT2 | Tỉnh/Thành |
+| THQ3 | Quận |
+| THP4 | Phường |
+| THD5 | Đường |
+| THDD41 | Đoạn đường |
+| THMTVT42 | Mô tả vị trí |
+| THNVT43 | Nhóm vị trí |
+| THGDGD6 | Giá đã giao dịch |
+| THTDGD7 | Thời điểm giao dịch |
+| THNT8 | Nguồn tin |
+| THDGDDGD9 | Đơn giá đất đã giao dịch |
+| THHATL38 | Hình ảnh - Tài liệu |
    
 
 |code   |description                      |
