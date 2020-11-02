@@ -8,6 +8,7 @@
 - [Testing](#testing)
 ### I.Thông tin bất động sản
 | code | description |
+| :---: | :---: | :---: |
 | THDC1 | Địa chỉ |
 | THTT2 | Tỉnh/Thành |
 | THQ3 | Quận |
