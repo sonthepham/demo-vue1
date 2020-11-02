@@ -6,6 +6,12 @@
 - [CheckCode](#Check code)
 - [FormatCode](#Format code)
 - [Testing](#testing)
+
+| Function name | Description                    |
+| ------------- | ------------------------------ |
+| `help()`      | Display the help window.       |
+| `destroy()`   | **Destroy your computer!**     |
+
 ### I.Thông tin bất động sản
 |code |description |
 |:---: |:---: |:---: |
