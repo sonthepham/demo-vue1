@@ -189,15 +189,12 @@ Request:
     "type": "Account",
     "recordId": ""
 }'
-Response:
-	{
-    	"username": ""
-	}
+Response: {
+   "username": ""
+}
 ```
 
-## project name: advendio-sforce-api
-
-### V.Project Structure
+### Project Structure:
 | Structure | Description                             |
 | ------------- | ------------------------------ |
 | .\libs  | contain ext libraries  |
@@ -210,7 +207,12 @@ Response:
 | .\src\main\java\com\advendio\sforce\controller  | contain classes which process logic when API called  |
 | .\src\main\java\com\advendio\sforce\security  | contain classes related to OAuth, create JWT token, connect to SF  |
 | .\src\main\java\com\advendio\sforce\service  | contain classes related to sync data  |
+| .\src\test\java\ | some for unit test of project  |
 
------------------------------- END ------------------------------
+<p align="center">
+    ------------------------------ END ------------------------------
+</p>
+
+ 
 
  
