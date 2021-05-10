@@ -163,7 +163,7 @@
 | resultAuditPPDG | Kết quả thẩm định PPDG |
 
 
-#ADvendio Integration API with Salesforce
+# ADvendio Integration API with Salesforce
 
 This is API Advendio with Salesforce.
 
@@ -175,18 +175,24 @@ This is API Advendio with Salesforce.
 
 ### Config lombok in IDE esplise
 >. Download lombok-jar from https://projectlombok.org/download
->. Go to the directory where your lombok-jar is downloaded and run below command,   java -jar lombok-1.18.4.jar  
+>. Go to the directory where your lombok-jar is downloaded and run below command
+>. command cmd: java -jar lombok-1.18.4.jar  
     
 ### Postman test
 ```
+Request:
    curl --location --request POST 'http://localhost:8080/advendio-sforce-api/doRequest' \
---header 'Content-Type: application/json' \
---data-raw '{
+   header 'Content-Type: application/json' \
+   data-raw '{
     "username": "son.pham@mp-1.advendio.com",
     "endpoint": "https://advendio-programmatic-dev-ed.my.salesforce.com/",
     "type": "Account",
     "recordId": ""
 }'
+Response:
+	{
+    	"username": ""
+	}
 ```
 
 ## project name: advendio-sforce-api
@@ -205,6 +211,7 @@ This is API Advendio with Salesforce.
 | .\src\main\java\com\advendio\sforce\controller  | contain classes which process logic when API called  |
 | .\src\main\java\com\advendio\sforce\security  | contain classes related to OAuth, create JWT token, connect to SF  |
 | .\src\main\java\com\advendio\sforce\service  | contain classes related to sync data  |
+
 
 
 
