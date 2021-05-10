@@ -161,3 +161,18 @@
 | infoPPDG | Phương pháp điểm PPDG |
 | adjustPPDG | Bảng điều khiển PPDG |
 | resultAuditPPDG | Kết quả thẩm định PPDG |
+
+
+### V.Project Structure
+| Code | Description                             |
+| ------------- | ------------------------------ |
+| .\libs  | contain ext libraries  |
+| .\src\main  |   |
+| .\resources  |  contain all properties files, keystore,  setting files |
+| .\resources\wsdl  | contain wsdl file which exported from saleforce  |
+| .\src\main\java\com\advendio\sforce  |   |
+| .\src\main\java\com\advendio\sforce\common  |  containt interface class or something need to use for all project |
+| .\src\main\java\com\advendio\sforce\config  | for project config  |
+| .\src\main\java\com\advendio\sforce\controller  | contain classes which process logic when API called  |
+| .\src\main\java\com\advendio\sforce\security  | contain classes related to OAuth, create JWT token, connect to SF  |
+| .\src\main\java\com\advendio\sforce\service  | contain classes related to sync data  |
