@@ -216,5 +216,20 @@ Response:
 
 
 
+## project name: advendio-sforce-api
+## project path: /advendio-sforce-api
+## Project Structure:
+   advendio-sforce-api
+   ------ \libs : contain ext libraries
+   ------ \src\main
+   ------------ \resources : contain all properties files, keystore,  setting files
+   ---------------- \wsdl  : contain wsdl file which exported from saleforce
+   ------------ \java\com\advendio\sforce
+   ---------------- \common: 		containt interface class or something need to use for all project
+   ---------------- \config: 		for project config
+   ---------------- \controller:	contain classes which process logic when API called
+   ---------------- \security:		contain classes related to OAuth, create JWT token, connect to SF
+   ---------------- \service:		contain classes related to sync data
+
 
  
