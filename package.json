@@ -20,7 +20,7 @@
     "vue-router": "~3.0",
     "vuex": "^3.1.2",
     "vee-validate": "^2.2.8",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "browserslist": {
     "production": [
